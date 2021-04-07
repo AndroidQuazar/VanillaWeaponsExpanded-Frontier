@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Settlers</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+
+					<xpath>Defs/PawnKindDef[defName="Bandit" or defName="BountyHunter" or defName="Outlaw" or defName="Gunslinger" or defName="BanditLeader" or defName="Settler" or defName="Deputy" or defName="Militia" or defName="Frontier_Trader" or defName="Sheriff" or defName="Mayor"]/weaponTags/li</xpath>
+
+				</li>
+				
+				<li Class="PatchOperationAdd">
+
+					<xpath>Defs/PawnKindDef[defName="Bandit" or defName="BountyHunter" or defName="Outlaw" or defName="Gunslinger" or defName="BanditLeader" or defName="Settler" or defName="Deputy" or defName="Militia" or defName="Frontier_Trader" or defName="Sheriff" or defName="Mayor"]/weaponTags</xpath>
+					<value>
+                       <li>FrontierGunSimple</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+
+					<xpath>Defs/PawnKindDef[defName="BountyHunter" or defName="Gunslinger" or defName="BanditLeader" or defName="Militia" or defName="Frontier_Trader" or defName="Sheriff" or defName="Mayor"]/weaponTags</xpath>
+					<value>
+                       <li>FrontierGunAdvanced</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+
+					<xpath>Defs/ThingDef[defName="VFES_Gun_DoubleActionRevolver" or defName="VFES_Gun_DoubleBarreledShotgun" or defName="VFES_Gun_HuntingRifle"]/weaponTags</xpath>
+					<value>
+                        <li>FrontierGunSimple</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+
+					<xpath>Defs/PawnKindDef[defName="Bandit" or defName="Outlaw" or defName="Settler" or defName="Deputy"]/weaponMoney</xpath>
+					<value>
+                        <weaponMoney>265~500</weaponMoney>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+
+					<xpath>Defs/PawnKindDef[defName="BountyHunter" or defName="Gunslinger" or defName="BanditLeader" or defName="Militia" or defName="Frontier_Trader" or defName="Sheriff" or defName="Mayor"]/weaponMoney</xpath>
+					<value>
+                        <weaponMoney>265~700</weaponMoney>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
