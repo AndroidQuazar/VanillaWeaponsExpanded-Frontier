@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Laser</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+  <ThingDef ParentName="BaseBullet">
+    <defName>VWEFT_Bullet_SalvagedLaserRevolver</defName>
+    <label>unstable laser revolver shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Shot_SalvagedLaserPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+		<damageDef>Burn</damageDef>
+		<damageAmountBase>12</damageAmountBase>
+		<armorPenetrationBase>0.60</armorPenetrationBase>
+		<stoppingPower>0.5</stoppingPower>
+		<speed>85</speed>
+      <extraDamages>
+       <li>
+         <def>Burn</def>
+         <amount>12</amount>
+         <chance>0.1</chance>
+       </li>
+       </extraDamages>
+    </projectile>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseLaserGun">
+    <defName>VWEFT_Gun_SalvagedLaserRevolver</defName>
+	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+    <label>salvaged laser revolver</label>
+    <description>A salvaged revolver capable of emitting an unstable beam of light with enough power to deal moderate damage.\n\nBy using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat quickly when fully warmed up, resulting in a small battery explosion around the user.</description>
+    <graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/Laser/SalvagedLaserRevolver</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VWE_Interact_UnstableLaserGun</soundInteract>
+    <statBases>
+		<WorkToMake>11500</WorkToMake>
+		<MarketValue>1400</MarketValue>
+		<Mass>1.2</Mass>
+			<AccuracyTouch>0.54</AccuracyTouch>
+			<AccuracyShort>0.66</AccuracyShort>
+			<AccuracyMedium>0.64</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Steel>80</Steel>
+		<Plasteel>65</Plasteel>
+		<ComponentSpacer>13</ComponentSpacer>
+		<Gold>10</Gold>
+    </costList>
+	<techLevel>Ultra</techLevel>
+    <weaponTags Inherit="False">
+		<li>SalvagedLaserFrontierGun</li>
+    </weaponTags>
+		<generateCommonality>0.1</generateCommonality>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<label>Standard</label>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>VWEFT_Bullet_SalvagedLaserRevolver</defaultProjectile>
+			<warmupTime>2</warmupTime>
+			<range>23.9</range>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>2</burstShotCount>
+			<soundCast>VWE_UnstableLaserShot_Light</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+      </li>
+    </verbs>
+	<comps>     
+		<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+			<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+			<WarmUpReductionPerShot>0.23</WarmUpReductionPerShot>
+			<Overheats>true</Overheats>
+			<OverheatDestroys>false</OverheatDestroys>
+			<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+			<OverheatBlastExtraDamage>4</OverheatBlastExtraDamage>
+			<OverheatBlastRadius>1</OverheatBlastRadius>
+			<OverheatChance>0.1</OverheatChance>
+			<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+			<OverheatMoteSize>1</OverheatMoteSize>
+		</li> 
+	</comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+ </ThingDef>
+				</value>
+			</li>
+			
+<!-- Repeater -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+  <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <defName>VWEFT_Bullet_SalvagedLaserRepeater</defName>
+    <label>unstable laser shot</label>
+    <description>An unstable laser beam.</description>
+    <textures>
+      <li>Things/Projectile/Shot_SalvagedLaserRifle</li>
+    </textures>
+    <seam>0</seam>
+    <causefireChance>0.15</causefireChance>
+
+    <projectile>
+		<damageDef>Burn</damageDef>
+		<damageAmountBase>14</damageAmountBase>
+		<armorPenetrationBase>0.56</armorPenetrationBase>
+		<stoppingPower>1.5</stoppingPower>
+      <extraDamages>
+       <li>
+         <def>Burn</def>
+         <amount>14</amount>
+         <chance>0.1</chance>
+       </li>
+       </extraDamages>
+    </projectile>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseLaserGun">
+    <defName>VWEFT_Gun_SalvagedLaserRepeater</defName>
+	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+    <label>salvaged laser repeater</label>
+    <description>A salvaged repeater capable of emitting an unstable beam of light with enough power to deal moderate damage over medium distance.\n\nBy using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat quickly when fully warmed up, resulting in a small battery explosion around the user.</description>
+    <graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/Laser/SalvagedLaserRepeater</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VWE_Interact_UnstableLaserGun</soundInteract>
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MarketValue>2000</MarketValue>
+		<Mass>2.6</Mass>
+			<AccuracyTouch>0.62</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.64</AccuracyLong>
+			<RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Steel>80</Steel>
+		<Plasteel>65</Plasteel>
+		<ComponentSpacer>13</ComponentSpacer>
+		<Gold>20</Gold>
+    </costList>
+	<techLevel>Ultra</techLevel>
+    <weaponTags Inherit="False">
+		<li>SalvagedLaserFrontierGun</li>
+    </weaponTags>
+		<generateCommonality>0.1</generateCommonality>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<label>Standard</label>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>VWEFT_Bullet_SalvagedLaserRepeater</defaultProjectile>
+			<warmupTime>2</warmupTime>
+			<range>26.9</range>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>VWE_UnstableLaserShot_Rifle</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+      </li>
+    </verbs>
+	<comps>     
+		<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+			<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+			<WarmUpReductionPerShot>0.25</WarmUpReductionPerShot>
+			<Overheats>true</Overheats>
+			<OverheatDestroys>false</OverheatDestroys>
+			<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+			<OverheatBlastExtraDamage>4</OverheatBlastExtraDamage>
+			<OverheatBlastRadius>1.5</OverheatBlastRadius>
+			<OverheatChance>0.1</OverheatChance>
+			<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+			<OverheatMoteSize>1</OverheatMoteSize>
+		</li> 
+	</comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+ </ThingDef>
+				</value>
+			</li>
+			
+<!-- hunting rifle -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+  <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <defName>VWEFT_Bullet_SalvagedLaserHuntingRifle</defName>
+    <label>unstable precise laser shot</label>
+    <description>An unstable long range laser beam.</description>
+    <textures>
+      <li>Things/Projectile/Shot_SalvagedLaserSniperRifle</li>
+    </textures>
+    <seam>0.1</seam>
+    <causefireChance>0.2</causefireChance>
+	<beamWidth>1.5</beamWidth>
+	<lifetime>120</lifetime>
+    <projectile>
+		<damageDef>Burn</damageDef>
+		<damageAmountBase>30</damageAmountBase>
+		<armorPenetrationBase>1</armorPenetrationBase>
+		<stoppingPower>3</stoppingPower>
+      <extraDamages>
+       <li>
+         <def>Burn</def>
+         <amount>30</amount>
+         <chance>0.1</chance>
+       </li>
+       </extraDamages>
+    </projectile>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseLaserGun">
+    <defName>VWEFT_Gun_SalvagedLaserHuntingRifle</defName>
+	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+    <label>salvaged laser hunting rifle</label>
+    <description>A salvaged hunting rifle capable of emitting an unstable beam of light with enough power to deal moderate damage over long distances.\n\nBy using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat quickly when fully warmed up, resulting in a small battery explosion around the user.</description>
+    <graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/Laser/SalvagedLaserHuntingRifle</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VWE_Interact_UnstableLaserGun</soundInteract>
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MarketValue>2300</MarketValue>
+		<Mass>3.8</Mass>
+			<AccuracyTouch>0.56</AccuracyTouch>
+			<AccuracyShort>0.77</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.8</AccuracyLong>
+			<RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Steel>80</Steel>
+		<Plasteel>60</Plasteel>
+		<ComponentSpacer>13</ComponentSpacer>
+		<Gold>20</Gold>
+    </costList>
+	<techLevel>Ultra</techLevel>
+    <weaponTags Inherit="False">
+		<li>SalvagedLaserFrontierGun</li>
+    </weaponTags>
+		<generateCommonality>0.1</generateCommonality>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.1</MoveSpeed> <!-- drawback -->
+	</equippedStatOffsets>
+	<equippedAngleOffset>50</equippedAngleOffset>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<label>Standard</label>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>VWEFT_Bullet_SalvagedLaserHuntingRifle</defaultProjectile>
+			<warmupTime>4.6</warmupTime>
+			<range>34.9</range>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>VWE_UnstableLaserShot_Heavy</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+      </li>
+    </verbs>
+	<comps>     
+		<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+			<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+			<WarmUpReductionPerShot>1.5</WarmUpReductionPerShot>
+			<Overheats>true</Overheats>
+			<OverheatDestroys>false</OverheatDestroys>
+			<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+			<OverheatBlastExtraDamage>8</OverheatBlastExtraDamage>
+			<OverheatBlastRadius>1.5</OverheatBlastRadius>
+			<OverheatChance>0.1</OverheatChance>
+			<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+			<OverheatMoteSize>1</OverheatMoteSize>
+		</li> 
+	</comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+ </ThingDef>
+				</value>
+			</li>
+			
+		</operations>
+		</match>
+	</Operation>
+
+</Patch>

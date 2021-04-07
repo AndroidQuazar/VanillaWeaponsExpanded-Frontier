@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Heavy Weapons</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs</xpath>
+					<value>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VWEFT_Gun_HandheldGatlingGun</defName>
+    <label>handheld gatling gun</label>
+    <description>tbd.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Heavy/HandheldGatlingGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>12</Mass>
+      <AccuracyTouch>0.13</AccuracyTouch>
+      <AccuracyShort>0.23</AccuracyShort>
+      <AccuracyMedium>0.23</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>20</ComponentIndustrial>
+	  <Gold>30</Gold>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VWEFT_Bullet_HandheldGatlingGun</defaultProjectile>
+        <warmupTime>2.9</warmupTime>
+        <range>19.9</range>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+		<comps>
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="HeavyWeapons.HeavyWeapon">
+				<weaponHitPointsDeductionOnShot>1</weaponHitPointsDeductionOnShot>
+				<isHeavy>true</isHeavy>
+				<supportedArmors>
+					<li>VWE_Apparel_Exoframe</li>
+				</supportedArmors>
+			</li>
+		</modExtensions>
+  </ThingDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs</xpath>
+					<value>
+  <ThingDef ParentName="BaseBullet">
+    <defName>VWEFT_Bullet_HandheldGatlingGun</defName>
+    <label>handheld gatling gun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>70</speed>
+      <extraDamages>
+       <li>
+         <def>Bullet</def>
+         <amount>8</amount>
+         <chance>0.1</chance>
+       </li>
+       </extraDamages>
+    </projectile>
+  </ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
