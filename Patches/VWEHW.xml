@@ -44,7 +44,7 @@
     </recipeMaker>
     <techLevel>Industrial</techLevel>
     <weaponTags>
-      <li>GunHeavy</li>
+      <li>GunHeavyFrontier</li>
     </weaponTags>
     <equippedStatOffsets>
       <MoveSpeed>-0.25</MoveSpeed>
