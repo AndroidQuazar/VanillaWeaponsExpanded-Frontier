@@ -55,9 +55,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>VWEFT_Bullet_HandheldGatlingGun</defaultProjectile>
         <warmupTime>2.9</warmupTime>
-        <range>19.9</range>
-        <burstShotCount>10</burstShotCount>
-        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <range>21.9</range>
+        <burstShotCount>12</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
         <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -104,12 +104,12 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>8</damageAmountBase>
+      <damageAmountBase>7</damageAmountBase>
       <speed>70</speed>
       <extraDamages>
        <li>
          <def>Bullet</def>
-         <amount>8</amount>
+         <amount>7</amount>
          <chance>0.1</chance>
        </li>
        </extraDamages>

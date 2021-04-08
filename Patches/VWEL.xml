@@ -21,14 +21,14 @@
     </graphicData>
     <projectile>
 		<damageDef>Burn</damageDef>
-		<damageAmountBase>12</damageAmountBase>
+		<damageAmountBase>16</damageAmountBase>
 		<armorPenetrationBase>0.60</armorPenetrationBase>
 		<stoppingPower>0.5</stoppingPower>
-		<speed>85</speed>
+		<speed>110</speed>
       <extraDamages>
        <li>
          <def>Burn</def>
-         <amount>12</amount>
+         <amount>16</amount>
          <chance>0.1</chance>
        </li>
        </extraDamages>
@@ -63,7 +63,7 @@
     </costList>
 	<techLevel>Ultra</techLevel>
     <weaponTags Inherit="False">
-		<li>SalvagedLaserFrontierGun</li>
+		<li>SalvagedLaserGun</li>
     </weaponTags>
 		<generateCommonality>0.1</generateCommonality>
     <equippedStatOffsets>
@@ -77,7 +77,7 @@
 			<warmupTime>2</warmupTime>
 			<range>23.9</range>
 			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-			<burstShotCount>2</burstShotCount>
+			<burstShotCount>1</burstShotCount>
 			<soundCast>VWE_UnstableLaserShot_Light</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>14</muzzleFlashScale>
@@ -126,25 +126,24 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs</xpath>
 				<value>
-  <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+  
+  <ThingDef ParentName="BaseBullet">
     <defName>VWEFT_Bullet_SalvagedLaserRepeater</defName>
     <label>unstable laser shot</label>
-    <description>An unstable laser beam.</description>
-    <textures>
-      <li>Things/Projectile/Shot_SalvagedLaserRifle</li>
-    </textures>
-    <seam>0</seam>
-    <causefireChance>0.15</causefireChance>
-
+    <graphicData>
+      <texPath>Things/Projectile/Shot_SalvagedLaserPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <projectile>
 		<damageDef>Burn</damageDef>
-		<damageAmountBase>14</damageAmountBase>
-		<armorPenetrationBase>0.56</armorPenetrationBase>
-		<stoppingPower>1.5</stoppingPower>
+		<damageAmountBase>12</damageAmountBase>
+		<armorPenetrationBase>0.60</armorPenetrationBase>
+		<stoppingPower>0.5</stoppingPower>
+		<speed>85</speed>
       <extraDamages>
        <li>
          <def>Burn</def>
-         <amount>14</amount>
+         <amount>12</amount>
          <chance>0.1</chance>
        </li>
        </extraDamages>
@@ -179,7 +178,7 @@
     </costList>
 	<techLevel>Ultra</techLevel>
     <weaponTags Inherit="False">
-		<li>SalvagedLaserFrontierGun</li>
+		<li>SalvagedLaserGun</li>
     </weaponTags>
 		<generateCommonality>0.1</generateCommonality>
     <equippedStatOffsets>
@@ -205,7 +204,7 @@
 	<comps>     
 		<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
 			<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
-			<WarmUpReductionPerShot>0.25</WarmUpReductionPerShot>
+			<WarmUpReductionPerShot>0.5</WarmUpReductionPerShot>
 			<Overheats>true</Overheats>
 			<OverheatDestroys>false</OverheatDestroys>
 			<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
@@ -296,7 +295,7 @@
     </costList>
 	<techLevel>Ultra</techLevel>
     <weaponTags Inherit="False">
-		<li>SalvagedLaserFrontierGun</li>
+		<li>SalvagedLaserGun</li>
     </weaponTags>
 		<generateCommonality>0.1</generateCommonality>
 	<equippedStatOffsets>
