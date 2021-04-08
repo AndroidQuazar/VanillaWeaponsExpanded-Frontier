@@ -37,6 +37,14 @@
 					</value>
 				</li>
 				
+				<li Class="PatchOperationAdd">
+
+					<xpath>Defs/ThingDef[defName="Gun_Revolver" or defName="Gun_BoltActionRifle" or defName="Gun_PumpShotgun"]/weaponTags</xpath>
+					<value>
+                        <li>FrontierGunSimple</li>
+					</value>
+				</li>
+				
 				<li Class="PatchOperationReplace">
 
 					<xpath>Defs/PawnKindDef[defName="Bandit" or defName="Outlaw" or defName="Settler" or defName="Deputy"]/weaponMoney</xpath>
