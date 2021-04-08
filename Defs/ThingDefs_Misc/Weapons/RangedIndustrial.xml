@@ -28,7 +28,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>VWEFT_Gun_HeavyRevolver</defName>
     <label>heavy revolver</label>
-    <description>Tbd.</description>
+    <description>An ornate favorite among wealthy lawmen and bandits alike for its increased firepower and range at the cost of reload speed./n/n Tales of steamworld gunslingers would imply this weapon and ones like it are capable of occasional incredibly lucky shots.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/HeavyRevolver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -116,7 +116,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>VWEFT_Gun_VolcanicPistol</defName>
     <label>volcanic pistol</label>
-    <description>Tbd.</description>
+    <description>An ornate pistol meant to provide the strength of a full-sized rifle with the portability of a revolver. Surprisingly high ammo capacity and range at the cost of a long time to reload and rather poor accuracy due to recoil./n/n Tales of steamworld gunslingers would imply this weapon and ones like it are capable of occasional incredibly lucky shots.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/VolcanicPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -185,7 +185,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>VWEFT_Gun_FrontierPistol</defName>
     <label>frontier pistol</label>
-    <description>Tbd.</description>
+    <description>An ornate variant of a commonplace Old World pistol, effective at short and medium ranges./n/n Tales of steamworld gunslingers would imply this weapon and ones like it are capable of occasional incredibly lucky shots.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/FrontierPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -271,7 +271,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>VWEFT_Gun_RollingBlockRifle</defName>
     <label>rolling block rifle</label>
-    <description>Tbd.</description>
+    <description>An ornate high-power marksmen rifle originally designed for dispatching muffalo in a single shot. Once outfitted with a long-range scope and modernized reloading system it didn't take long for would-be bounty hunters to embrace the hunting instrument./n/n Tales of steamworld gunslingers would imply this weapon and ones like it are capable of occasional incredibly lucky shots.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/RollingBlockRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -358,7 +358,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>VWEFT_Gun_RepeatingShotgun</defName>
     <label>repeating shotgun</label>
-    <description>Tbd.</description>
+    <description>An ornate and surprisingly portable shotgun meant to be fired one handed from a mounted position. Packs a punch, earning the title "boomalope leg"./n/n Tales of steamworld gunslingers would imply this weapon and ones like it are capable of occasional incredibly lucky shots.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/RepeatingShotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>

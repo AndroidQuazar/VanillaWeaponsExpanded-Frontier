@@ -14,7 +14,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>VWEFT_Gun_Derringer</defName>
     <label>derringer</label>
-    <description>Tbd.</description>
+    <description>An ornate, easily concealable pistol meant for disabling aggressive humans and wildlife alike at very close range. Often carried by working girls, farmhands, and shady businessmen of far-off steamworlds./n/n Tales of steamworld gunslingers would imply this weapon and ones like it are capable of occasional incredibly lucky shots.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Quickdraw/Derringer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -116,7 +116,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>VWEFT_Gun_LeverActionShotgun</defName>
     <label>lever-action shotgun</label>
-    <description>Tbd.</description>
+    <description>An ornate, quick-loading simple shotgun used most often for defending ones claim on the frontier, although also a favorite of bartenders and store owners as an imposing tool against rowdy patrons or thieves./n/n Tales of steamworld gunslingers would imply this weapon and ones like it are capable of occasional incredibly lucky shots.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Quickdraw/LeverActionShotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>

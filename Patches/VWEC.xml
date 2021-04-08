@@ -14,7 +14,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>VWEFT_Gun_GaussRevolver</defName>
 		<label>gauss revolver</label>
-		<description>A spacer-tech gauss revolver. An array of coils accelerate sabot projectiles from a revolving drum, penetrating armor and piercing through targets in its path.</description>
+		<description>A spacer-tech revolver for that frontier feel with high-tech power. A coil-array accelerates single shots capable of popping the heads of multiple ne'er do wells in a neat line./n/n Just like its conventional counterpart, this gun supposedly is capable of incredibly lucky shots.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Coilguns/CoilgunRevolver</texPath>
@@ -160,7 +160,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>VWEFT_Gun_GaussRepeater</defName>
 		<label>gauss repeater</label>
-		<description>A spacer-tech gauss repeater. A set of coils accelerate ferromagnetic sabots up to breakneck speeds, penetrating armor and piercing through multiple targets alike.</description>
+		<description>A spacer-tech gauss rifle themed as a steamworld-inspired repeater. A set of coils accelerate terromagnetic sabots capable of penetrating multiple layers of flesh and armor./n/n Just like its conventional counterpart, this gun supposedly is capable of incredibly lucky shots.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Coilguns/CoilgunRepeater</texPath>
