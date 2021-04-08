@@ -9,6 +9,7 @@
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
@@ -36,13 +37,13 @@
     <soundInteract>Interact_Revolver</soundInteract>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Mass>1.4</Mass>
-      <AccuracyTouch>0.85</AccuracyTouch>
-      <AccuracyShort>0.8</AccuracyShort>
-      <AccuracyMedium>0.5</AccuracyMedium>
-      <AccuracyLong>0.4</AccuracyLong>
-      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>FrontierGunAdvanced</li>
@@ -99,13 +100,12 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>15</damageAmountBase>
-      <stoppingPower>1</stoppingPower>
+      <damageAmountBase>10</damageAmountBase>
       <speed>55</speed>
       <extraDamages>
        <li>
          <def>Bullet</def>
-         <amount>15</amount>
+         <amount>10</amount>
          <chance>0.1</chance>
        </li>
        </extraDamages>
@@ -151,7 +151,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>VWEFT_Bullet_VolcanicPistol</defaultProjectile>
         <warmupTime>0.4</warmupTime>
-        <range>25.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+        <range>27.9</range>
         <soundCast>Shot_Revolver</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -198,13 +200,13 @@
       <li>FrontierGunSimple</li>
     </weaponTags>
     <statBases>
-      <WorkToMake>6000</WorkToMake>
+      <WorkToMake>5000</WorkToMake>
       <Mass>1.2</Mass>
-      <AccuracyTouch>0.83</AccuracyTouch>
-      <AccuracyShort>0.73</AccuracyShort>
-      <AccuracyMedium>0.43</AccuracyMedium>
-      <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>35</Steel>
@@ -252,12 +254,12 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>12</damageAmountBase>
+      <damageAmountBase>8</damageAmountBase>
       <speed>55</speed>
       <extraDamages>
        <li>
          <def>Bullet</def>
-         <amount>12</amount>
+         <amount>8</amount>
          <chance>0.1</chance>
        </li>
        </extraDamages>
@@ -274,13 +276,13 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
-      <WorkToMake>13000</WorkToMake>
+      <WorkToMake>23000</WorkToMake>
       <Mass>3.7</Mass>
-      <AccuracyTouch>0.67</AccuracyTouch>
-      <AccuracyShort>0.82</AccuracyShort>
-      <AccuracyMedium>0.92</AccuracyMedium>
-      <AccuracyLong>0.82</AccuracyLong>
-      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.86</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>FrontierGunAdvanced</li>
@@ -300,7 +302,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>VWEFT_Bullet_RollingBlockRifle</defaultProjectile>
-        <warmupTime>1.9</warmupTime>
+        <warmupTime>1.7</warmupTime>
         <range>39.9</range>
         <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -334,7 +336,7 @@
       <damageDef>Bullet</damageDef>
       <damageAmountBase>21</damageAmountBase>
       <stoppingPower>1.5</stoppingPower>
-      <speed>70</speed>
+      <speed>60</speed>
       <extraDamages>
        <li>
          <def>Bullet</def>
