@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Vanilla Weapons Expanded - Frontier</name>
-  <author>Oskar Potocki, Luizi, xrushha</author>
+  <author>Oskar Potocki, Luizi, xrushhha</author>
   <supportedVersions>
     <li>1.2</li>
   </supportedVersions>
   <packageId>VanillaExpanded.VWEFT</packageId>
-  <description>Vanilla Weapons Expanded - Makeshift is a small module that fits perfectly with all the nutters playing Naked Brutality survival scenario, or roleplaying in a post-apocalyptic universe. Inspired directly by games like Rust and Fallout, as well as the improvised firearms of the Chechen rebels, these guns can be crafted without any machining tables or steel. All you need is to complete the Makeshift weapons research project, bring your components to a crafting spot and start mass producing these cheap, unreliable weapons.
-  
-That’s right. Unreliable? What does it mean? It means that each weapon has a random amount of shots it can fire within a burst (with a minimum and maximum amount). A makeshift pistol can fire between 0 (!) and 1 shots, whilst a makeshift rifle can fire anywhere between 0 and 5 shots.
+  <description>One of the most commonly requested features for Vanilla Factions Expanded - Settlers was tech-locking their weapons. Sadly, vanilla game does not differentiate between ‘western-style’ weapons like revolvers and M14 assault rifles - for the game, it’s all industrial weapons. If we were to white list only ‘western-style’ weapons, it wouldn’t offer enough variety - you’d constantly see raiders with revolvers, bolt action rifles and pump shotguns. That’s it. Boring isn’t it?
 
-You never know how many shots your burst will fire, or if it will fire at all, thus making these weapons non-ideal. Essentially, by crafting these, you allow Randy Random to mess with you one more time during every combat encounter. But hey, they are cheap, and they are makeshift!
+Don’t worry fam, we got you. Hold our beer while we deliver a decent-sized weapon mod featuring vast amount of new western-style weapons with a new High roller mechanic, giving these guns a chance (10%) to deal double damage. This mod also includes a large number of conditional patches adding even more weapons - if you’re running Vanilla Weapons Expanded - Laser, you can expect some laser frontier weapons, with Heavy Weapons you can hold a gatling gun, with Coilguns you can have proper coilgun revolver and repeater, and with quickdraw you can wield a famous derringer!
+
+Vanilla Weapons Expanded is part of a series of mods expanding on everyday life on the Rimworld. When paired together with a brand new Vanilla Apparel Expanded and Vanilla Armours Expanded, you can bring something to your game that will keep you interested in it for days. 
 </description>
   <modDependencies>
     <li>
@@ -31,5 +31,10 @@ You never know how many shots your burst will fire, or if it will fire at all, t
     <li>Ludeon.RimWorld.Royalty</li>
     <li>brrainz.harmony</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	<li>VanillaExpanded.VWEQ</li>
+	<li>VanillaExpanded.VWEL</li>
+	<li>VanillaExpanded.VWEHW</li>
+	<li>VanillaExpanded.VWEC</li>
+	<li>OskarPotocki.VanillaFactionsExpanded.SettlersModule</li>
   </loadAfter>
 </ModMetaData>
