@@ -39,7 +39,7 @@
     <defName>VWEFT_Gun_SalvagedLaserRevolver</defName>
 	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
     <label>salvaged laser revolver</label>
-    <description>A drum-based laser pistol capable of heating up quite quickly, each chamber containing an individual microbattery primed to focus each shot./n/n By using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.</description>
+    <description>A drum-based laser pistol capable of heating up quite quickly, each chamber containing an individual microbattery primed to focus each shot.\n\nBy using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.</description>
     <graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Laser/SalvagedLaserRevolver</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -154,7 +154,7 @@
     <defName>VWEFT_Gun_SalvagedLaserRepeater</defName>
 	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
     <label>salvaged laser repeater</label>
-    <description>A salvaged repeating rifle capable of firing unstable light at both close and medium distance, surprisingly accurate./n/n By using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.</description>
+    <description>A salvaged repeating rifle capable of firing unstable light at both close and medium distance, surprisingly accurate.\n\nBy using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.</description>
     <graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Laser/SalvagedLaserRepeater</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -271,7 +271,7 @@
     <defName>VWEFT_Gun_SalvagedLaserHuntingRifle</defName>
 	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
     <label>salvaged laser hunting rifle</label>
-    <description>A scoped marksmen laser rifle capable of firing unstable light at very long range, supposedly used for mag train robberies long ago./n/n By using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.</description>
+    <description>A scoped marksmen laser rifle capable of firing unstable light at very long range, supposedly used for mag train robberies long ago.\n\nBy using makeshift battery cells, this weapon is capable of quickly warming up, boosting the firing speed with each consecutive shot when standing still.</description>
     <graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Laser/SalvagedLaserHuntingRifle</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
