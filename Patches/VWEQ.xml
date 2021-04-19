@@ -42,7 +42,7 @@
       <Steel>25</Steel>
 	  <Plasteel>10</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
-	  <Gold>5</Gold>
+	  <Gold>1</Gold>
     </costList>
     <verbs>
       <li>
@@ -138,7 +138,7 @@
       <Steel>40</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
 	  <Plasteel>15</Plasteel>
-	  <Gold>20</Gold>
+	  <Gold>2</Gold>
     </costList>
     <recipeMaker>
       <researchPrerequisite>VWE_Quickdraw</researchPrerequisite>

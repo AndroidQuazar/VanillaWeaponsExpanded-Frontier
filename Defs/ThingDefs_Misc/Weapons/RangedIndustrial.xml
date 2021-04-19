@@ -51,7 +51,7 @@
     <costList>
       <Steel>50</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <Gold>15</Gold>
+	  <Gold>1</Gold>
     </costList>
     <recipeMaker>
       <skillRequirements>
@@ -139,7 +139,7 @@
     <costList>
       <Steel>45</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <Gold>10</Gold>
+	  <Gold>1</Gold>
     </costList>
     <recipeMaker>
       <skillRequirements>
@@ -213,7 +213,7 @@
     <costList>
       <Steel>35</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <Gold>8</Gold>
+	  <Gold>1</Gold>
     </costList>
     <verbs>
       <li>
@@ -292,7 +292,7 @@
     <costList>
       <Steel>70</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
-	  <Gold>20</Gold>
+	  <Gold>2</Gold>
     </costList>
     <recipeMaker>
       <skillRequirements>
@@ -376,7 +376,7 @@
     <costList>
       <Steel>70</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
-	  <Gold>20</Gold>
+	  <Gold>2</Gold>
     </costList>
     <recipeMaker>
       <skillRequirements>

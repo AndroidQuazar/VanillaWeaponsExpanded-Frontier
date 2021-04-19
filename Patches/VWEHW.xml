@@ -34,7 +34,7 @@
     <costList>
       <Steel>150</Steel>
       <ComponentIndustrial>20</ComponentIndustrial>
-	  <Gold>30</Gold>
+	  <Gold>3</Gold>
     </costList>
     <recipeMaker>
       <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>

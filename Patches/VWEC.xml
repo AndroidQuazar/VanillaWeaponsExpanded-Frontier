@@ -43,7 +43,7 @@
 			<Steel>50</Steel>
 			<Uranium>15</Uranium>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Gold>10</Gold>
+			<Gold>1</Gold>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -189,7 +189,7 @@
 			<Steel>90</Steel>
 			<Uranium>25</Uranium>
 			<ComponentSpacer>2</ComponentSpacer>
-			<Gold>25</Gold>
+			<Gold>2</Gold>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
